@@ -559,7 +559,7 @@ MonoBehaviour:
   m_MoveAction: {fileID: 0}
   m_SubmitAction: {fileID: 0}
   m_CancelAction: {fileID: 0}
-  m_LeftClickAction: {fileID: -7050637153128420236, guid: cf327a7d0de88ff4abd608b56c9b4125, type: 3}
+  m_LeftClickAction: {fileID: 0}
   m_MiddleClickAction: {fileID: 0}
   m_RightClickAction: {fileID: 0}
   m_ScrollWheelAction: {fileID: 0}
@@ -776,6 +776,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764409d606e92be4cb1ba4c9f8462d5e, type: 3}
+--- !u!1 &1233186768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7108420068774040626, guid: bfd8584702287a44c9aab10285461168, type: 3}
+  m_PrefabInstance: {fileID: 7108420067540876258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1438644920
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +821,11 @@ RectTransform:
 --- !u!224 &1776252197 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7108420068242312903, guid: bfd8584702287a44c9aab10285461168, type: 3}
+  m_PrefabInstance: {fileID: 7108420067540876258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1806016414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7108420068273136764, guid: bfd8584702287a44c9aab10285461168, type: 3}
   m_PrefabInstance: {fileID: 7108420067540876258}
   m_PrefabAsset: {fileID: 0}
 --- !u!224 &1928887769 stripped
@@ -1025,6 +1035,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8828246580049544418, guid: f49b7bb323a085c408e71299e3219a77, type: 3}
+      propertyPath: playerLeftPos
+      value: 
+      objectReference: {fileID: 1806016414}
+    - target: {fileID: 8828246580049544418, guid: f49b7bb323a085c408e71299e3219a77, type: 3}
+      propertyPath: playerRightPos
+      value: 
+      objectReference: {fileID: 1233186768}
+    - target: {fileID: 8828246580049544418, guid: f49b7bb323a085c408e71299e3219a77, type: 3}
       propertyPath: playerInput.m_Id
       value: 58b5de25-561d-4b4b-b1f5-ec97b7769bd8
       objectReference: {fileID: 0}
@@ -1128,6 +1146,14 @@ PrefabInstance:
     - target: {fileID: 7108420068242312903, guid: bfd8584702287a44c9aab10285461168, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108420068273136764, guid: bfd8584702287a44c9aab10285461168, type: 3}
+      propertyPath: m_Name
+      value: Player Pos Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 7108420068774040626, guid: bfd8584702287a44c9aab10285461168, type: 3}
+      propertyPath: m_Name
+      value: Player Pos Right
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfd8584702287a44c9aab10285461168, type: 3}

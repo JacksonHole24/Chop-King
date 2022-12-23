@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6324811014866603533}
   - component: {fileID: 6238489886628451476}
   - component: {fileID: 6704684478392255688}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.6987686}
@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 6598744511444084254}
   - component: {fileID: 8828246580049544418}
   - component: {fileID: 1246131932916927914}
+  - component: {fileID: 3050206616912585155}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -186,6 +187,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe2d89d7fbc204ca41b8bf90d6edab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveLeft: {fileID: -8378995416954933609, guid: cf327a7d0de88ff4abd608b56c9b4125, type: 3}
+  moveRight: {fileID: -6082520192702141182, guid: cf327a7d0de88ff4abd608b56c9b4125, type: 3}
+  attack: {fileID: -7050637153128420236, guid: cf327a7d0de88ff4abd608b56c9b4125, type: 3}
+  playerLeftPos: {fileID: 0}
+  playerRightPos: {fileID: 0}
 --- !u!114 &1246131932916927914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +222,29 @@ MonoBehaviour:
   m_DefaultActionMap: 
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!61 &3050206616912585155
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6598744511444084248}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 1.5835037}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 197.3523, y: 197.35228}
+  m_EdgeRadius: 0

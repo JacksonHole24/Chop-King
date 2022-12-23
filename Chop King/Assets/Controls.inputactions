@@ -45,7 +45,7 @@
                 {
                     "name": "",
                     "id": "61c5499b-843e-4f58-a9f0-f0ad6b88b019",
-                    "path": "<Keyboard>/leftArrow",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -67,7 +67,7 @@
                 {
                     "name": "",
                     "id": "ff4778ab-4720-45fb-bd0b-672af73914d3",
-                    "path": "<Keyboard>/rightArrow",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
