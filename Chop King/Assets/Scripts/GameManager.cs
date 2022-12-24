@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] public GameObject Tree;
     [SerializeField] public PlayerController playerController;
     [SerializeField] public Axe axe;
     [SerializeField] public ScoreManager scoreManager;
+    [SerializeField] public TreeSpawner treeSpawner;
 
     void Awake()
     {
@@ -23,5 +25,6 @@ public class GameManager : MonoBehaviour
         playerController = FindObjectOfType<PlayerController>();
         axe = FindObjectOfType<Axe>();
         scoreManager = FindObjectOfType<ScoreManager>();
+        treeSpawner = FindObjectOfType<TreeSpawner>();
     }
 }

@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84a47fc9012c0014792605ba07358e8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackTime: 0.5
 --- !u!1 &6598744511444084248
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,6 +206,7 @@ MonoBehaviour:
   attack: {fileID: -7050637153128420236, guid: cf327a7d0de88ff4abd608b56c9b4125, type: 3}
   playerLeftPos: {fileID: 0}
   playerRightPos: {fileID: 0}
+  isAttacking: 0
 --- !u!114 &1246131932916927914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,10 +253,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.5835037}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 3.125, y: 1.71875}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0

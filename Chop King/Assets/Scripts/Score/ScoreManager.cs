@@ -16,14 +16,16 @@ public class ScoreManager : MonoBehaviour
     public float multiplierResetTime;
 
     private int score;
-    private int treesDestroyed;
 
     private int multiplierNum;
     private bool isMultiplying;
     public float multiplierTimer;
 
+    private GameManager gameManager;
+
     void Start()
     {
+        gameManager = FindObjectOfType<GameManager>();
         isMultiplying = false;
     }
 
@@ -44,7 +46,7 @@ public class ScoreManager : MonoBehaviour
     public void AddScore()
     {
         multiplierNum++;
-        treesDestroyed++;
+        gameManager.treeSpawner.treesDestroyed++;
 
         float multiplierValue = multiplierNum * multiplier;
         score += (int)multiplierValue;

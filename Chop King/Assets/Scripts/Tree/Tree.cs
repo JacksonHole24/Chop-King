@@ -12,7 +12,10 @@ public class Tree : MonoBehaviour
     }
     public void Die()
     {
+        gameManager.treeSpawner.GetObjToSpawn();
         gameManager.scoreManager.AddScore();
+        gameManager.Tree.GetComponent<BoxCollider2D>().offset = new Vector2(gameManager.Tree.GetComponent<BoxCollider2D>().offset.x, gameManager.Tree.GetComponent<BoxCollider2D>().offset.y + 200);
+        gameManager.treeSpawner.treeParts.Remove(gameObject);
         Destroy(gameObject);
     }
 }
