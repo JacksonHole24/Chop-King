@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -11,9 +12,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject playerLeftPos;
     [SerializeField] GameObject playerRightPos;
 
-    void Start()
-    {
+    [HideInInspector] public bool isAttacking;
 
+    private GameManager gameManager;
+
+    void Awake()
+    {
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     void Update()
@@ -21,23 +26,26 @@ public class PlayerController : MonoBehaviour
        
     }
 
+    public void Death()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
     public void MoveLeft(InputAction.CallbackContext obj)
     {
-        Debug.Log("MoveLeft");
         transform.position = playerLeftPos.transform.position;
         transform.rotation = new Quaternion(0, 180, 0, 0);
     }
 
     public void MoveRight(InputAction.CallbackContext obj)
     {
-        Debug.Log("MoveRight");
         transform.position = playerRightPos.transform.position;
         transform.rotation = new Quaternion(0, 0, 0, 0);
     }
 
     public void Attack(InputAction.CallbackContext obj)
     {
-
+        isAttacking = true;
     }
 
     private void OnEnable()
